@@ -22,28 +22,29 @@
 
 ## : Architecture of Java : 
 
-
+<pre>
 	JDK vs JRE vs JVM vs JIT
-
+	
     ---------------------------------------------
     |	Java Development Kit = JRE + Dev Tools	|	
     |	-------------------------------------   |
     |   | JRE = JVM + Lib classes            |  |
     |   |   -----------------------------    |  |
-    |	|  | Java Virtual Machine	|    |  |
+    |   |  | Java Virtual Machine	|    |  |
     |   |  |      ( J V M )  		|    |	|
-    |   |  |    --------------------|	|    |  |
-    |	|  |	|		    |	|    |	|
-    |	|  |	|  J I T	    |	|    |	|
-    |	|  |	|  (Just in Time)   |	|    |	|
-    |	|  |	|		    |	|    |	|	
-    |	|  |    --------------------	|    |  |
-    |	|  | 			 	|    |	|
-    |	|  -----------------------------|    |	|
-    |	|				     |  |
+    |   |  |    -----------------	|    |  |
+    |   |  |   |		 |      |    |  |	
+    |   |  |   |  J I T	         |	|    |	|
+    |   |  |   |  (Just in Time) |	|    |	|
+    |   |  |   |		 |      |    |	|	
+    |   |  |    -----------------	|    |  |
+    |   |  | 			 	|    |	|
+    |   |  -----------------------------     |	|
+    |   |				     |  |
     |   --------------------------------------	|
     |		   				|
-    ---------------------------------------------
+    --------------------------------------------
+</pre>
 
 
 ### : JDK :
@@ -57,6 +58,7 @@
     		4. Archiver = jar
     		5. Docs generator = javadoc
     		6. Interpreter/loader
+
 
 ### : JRE :
 
@@ -72,6 +74,7 @@
     		2. JVM sends code to byte code verifier to check the format of code
 
 
+## : Compile Time v/s Run Time : 
 
 <pre>
    :: Compile Time ::									:: Run Time ::
