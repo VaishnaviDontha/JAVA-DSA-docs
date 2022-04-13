@@ -4,12 +4,12 @@
 			|
 			| (Compiler)	
 			|  Entire File
-		   \|/
+		       \|/
 	.class = byte code 			{This will not execute directly on a System, JVM is required because JAVA is platform independent }
 			|
 			| (Interpreter)
 			| Line by Line 	
-		   \|/
+		       \|/
 	Machine code (0 and 1)
 
 
@@ -25,24 +25,24 @@
 
 	JDK vs JRE vs JVM vs JIT
 
-	---------------------------------------------
+    ---------------------------------------------
     |	Java Development Kit = JRE + Dev Tools	|	
     |	-------------------------------------   |
     |   | JRE = JVM + Lib classes            |  |
     |   |   -----------------------------    |  |
-    |	|	| Java Virtual Machine		|	 |  |
-    |   |   |      ( J V M )  			|	 |	|
-    |   |   |   ---------------------	|	 |	|
-    |	|	|	|					|	|	 |	|
-    |	|	|	|		J I T		|	|	 |	|
-    |	|	|	|	(Just in Time)	|	|	 |	|
-    |	|	|	|					|	|	 |	|	
-    |	|   |   ---------------------	|	 |	|
-    |	|	|							|	 |	|
-    |	|	-----------------------------	 |	|
-    |	|									 |	|
+    |	|  | Java Virtual Machine	|    |  |
+    |   |  |      ( J V M )  		|    |	|
+    |   |  |    --------------------|	|    |  |
+    |	|  |	|		    |	|    |	|
+    |	|  |	|  J I T	    |	|    |	|
+    |	|  |	|  (Just in Time)   |	|    |	|
+    |	|  |	|		    |	|    |	|	
+    |	|  |    --------------------	|    |  |
+    |	|  | 			 	|    |	|
+    |	|  -----------------------------|    |	|
+    |	|				     |  |
     |   --------------------------------------	|
-    |		   									|
+    |		   				|
     ---------------------------------------------
 
 
@@ -74,20 +74,20 @@
 
 
 <pre>
-   :: Compile Time ::																	:: Run Time ::
-    JVM Execution 																			Class Loader
-    	Interpreter																				- Loading
-    		- Line by Line Execution																- Reads .class file and generate binary data
-    		- When a method is called many times it will interpret and and again.					- Object of this class is created in HEAP memory
-    	JIT 																					- Linking
+   :: Compile Time ::									:: Run Time ::
+      JVM Execution 									   Class Loader
+    	Interpreter										- Loading
+    		- Line by Line Execution							    - Reads .class file and generate binary data
+    		- When a method is called many times it will interpret again and again.		    - Object of this class is created in HEAP memory
+    	JIT 										        - Linking
     		- the methods which are repeated, JIT provides direct machine code                      - JVM verifies .class file generated
-    		  to avoid re-interpretation 															- allocates memory for class variables and default values
-    		- Makes execution faster 																- Replaces symbolic references from the type to direct references
-    		- Garbage Collector																		- Initialization
-    																								- All the static variables are assigned with their values defined in the code and static block
+    		  to avoid re-interpretation 								- allocates memory for class variables and default values
+    		- Makes execution faster 								 - Replaces symbolic references from the type to direct references
+    		- Garbage Collector									  - Initialization
+    													  - All the static variables are assigned with their values defined in the code and static block
 
-    [.java file] --- javac --> [.class file]													[class   --> [Byte code --> [Interpreter] --> [Runtime] --> [Hardware]
-    			(compilation) 																	loader]      verifier]
+    [.java file] --- javac --> [.class file]						[class   --> [Byte code --> [Interpreter] --> [Runtime] --> [Hardware]
+    		(compilation) 								 loader]      verifier]
 
 </pre>
 
