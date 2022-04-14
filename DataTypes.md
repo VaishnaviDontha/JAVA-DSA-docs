@@ -20,27 +20,27 @@
 
 	Strings, Objects, Arrays, etc.
 
-	Strings - Its is defined as an array of characters. diff b/w char and string is, string is designed to hold sequence of characters. Whereas, char array is collection of 		   separate char type entities.
-
-  * Literals - These are syntactical representation of data typa
-
-  * Identifier - Names of local variables, instance and class variables, labels, but also the names for classes, packages, modules and methods
-
-  * Access Modifiers - control the scope of class and methods = default, public, protected, private
-	 - Non-access Modifiers: final, abstract, strictfp
+	Strings - Its is defined as an array of characters. diff b/w char and string is, string is designed to hold sequence of characters. Whereas, char array is collection of separate char type entities. 
+	
+	Literals - These are syntactical representation of data types.
+	
+	Identifier - Names of local variables, instance and class variables, labels, but also the names for classes, packages, modules and methods.
+	
+	Access Modifiers - control the scope of class and methods = default, public, protected, private
+	Non-access Modifiers: final, abstract, strictfp
 
 # : User-Input via Scanner class : 
 
-		Method				Description
-	nextBoolean()		Reads a boolean value from the user
+	Method				Description
+	nextBoolean()			Reads a boolean value from the user
 	nextByte()			Reads a byte value from the user
-	nextDouble()		Reads a double value from the user
+	nextDouble()			Reads a double value from the user
 	nextFloat()			Reads a float value from the user
 	nextInt()			Reads a int value from the user
 	nextLine()			Reads a String value from the user
 	next() 					for Word
 	nextLong()			Reads a long value from the user
 	nextShort()			Reads a short value from the user
-	next().charAt(0) 	Reads a char value at 0 from the user
+	next().charAt(0) 		Reads a char value at 0 from the user
 	or
 	next().trim().charAt(0)
