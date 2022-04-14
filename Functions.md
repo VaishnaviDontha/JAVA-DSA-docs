@@ -57,9 +57,10 @@
             1. Via Integer
             2. String
 
-	- Pass by Value 
+	- Pass by Value = Here, when a value is passed by a method, and when the changes/modifications done in the method as per requirements. The actual parameters sticks to the same value when they're passed. This is also called as `Call by Value`.
+
 	* NO pass by Reference in JAVA *
-    But can be done in few different ways, Let's see indetail in coming blogs.
+    But can be done in few different ways, Let's see indetail in [here](CallByReference.md)
 
 	- Scoping 
 	1. Function Scope
