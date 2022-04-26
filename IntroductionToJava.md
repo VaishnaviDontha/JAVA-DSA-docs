@@ -1,11 +1,3 @@
----
-title: Introduction To Java
-slug: Java
-tags: JavaDSA
-domain: vaishnavidontha.hashnode.dev
----
-
-
 
 # : Introduction to Java :
 
