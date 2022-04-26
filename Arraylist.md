@@ -4,7 +4,7 @@
 
 		Part of Collection Framework, Util Package.
 
-		Syntax:
+### Syntax:
 			ArrayList<datatype> var_name = new ArrayList<datatype>(size);
 			OR
 			ArrayList<datatype> var_name = new ArrayList<>(); //Datatype mayn't be required 
@@ -14,7 +14,7 @@
 
 			Here, no Primitives are added instead wrapped classes are mentioned. 
 
-		Usage:
+### Usage:
 			Adding a value
 				.add(value);
 			
@@ -31,12 +31,12 @@
 				list.get(index);
 			here, list[index] isn't applicable
 
-		Working:
+### Working:
 			1. Size is fixed Internally
 			2. Say, if ArrayList if filled by half
 				It will create a new ArrayList of say, double the size
 				Old Elements are copied to new one
 				And, the old one is deleted.
 
-		MultiDimensional ArrayList: 
+### MultiDimensional ArrayList: 
 			ArrayList<ArrayList<datatype>> var_name = new ArrayList<>();

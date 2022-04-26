@@ -16,6 +16,7 @@
 	
 	INDEXs are also referred as position of the object in ARRAYs, starting from 0.
 
+
 	NEW Keyword - Used to create an OBJECT.
 
 	For an 
@@ -23,11 +24,16 @@
 			STRING array by default its going to be "null"  (when no value is added)
 
 
+
+### : INITIALISATION :
+
 	* To initialise and print data from Arrays - 
 			Type 1 : To initialise array objects when we've larger size, FOR loop helps us up
 			Type 2 : Arrays.toString(arr); (DO CHECK)
 			Type 3 : Enhanced FOR Loop
 
+### : DECLARATION OF ARRAYS : 
+	
 	* Declaring Array of Objects -	
 	
 			String[] str = new String[4];       	//Declaring a String Object
@@ -41,20 +47,20 @@
 
 	* Memory Management in Arrays - (DO CHECK)
 
-	* Multi Dimensional Array - 2D
+### : MULTI - DIMENSIONAL ARRAY 2D :
 
-			1. Initialised as 
+		1. Initialised as 
 					datatype var_name[][] = new datatype[size][size]; // Adding number of cols is NOT mandatory
-			2. Can also be stored data into this as 
+		2. Can also be stored data into this as 
 					
-					int[][] arr = {
+				int[][] arr = {
 									1, 2, 3,   //0th Index
 									4, 5, 6,   //1st Index
 									7, 8, 9    //2nd Index
 								  }
 
-			3. It is stored ( Array of Arrays in HEAP memory ) each  are holding 
-			4. Input/Output(Print) values into 2D - Can be done via FOR loop
+		3. It is stored ( Array of Arrays in HEAP memory ) each  are holding 
+		4. Input/Output(Print) values into 2D - Can be done via FOR loop
 					
 					for(int row = 0 ; row <= arr.length; row++){ 
 							//gives no. of rows
@@ -84,7 +90,9 @@
 						System.out.println(Arrays.toString(arr[row]));
 					}
 
-	* Jagged Arrays - It is an Array of Arrays where the variable number of counts in each coloumn can be of different sizes.
+### : JAGGED ARRAYs : 
+
+	Jagged Arrays - It is an Array of Arrays where the variable number of counts in each coloumn can be of different sizes.
 
 			Declaration = int jagged_arr[] = new int[4][]; 
 
@@ -110,6 +118,9 @@
 		                           {110, 120}
 		                              };
 
+
+### : Dynamic Arrays : 
+
 	* Dynamic Arrays - When col count is different
 
 
@@ -128,6 +139,9 @@
 	* Passing Arrays to Methods - As variables, we can pass arrays to methods as, - method(int[] sum){ ... }
 
 	* Returning Arrays from Methods - As variables, we can also return arrays as, - return int[]{... } or return a[]{ ... }
+
+
+### : Class Objeeects :
 
 	* Class Objects for Array - Every Array has a class object, shared with all other arrays with the same component type
 
